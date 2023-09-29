@@ -20,6 +20,26 @@ body {
 a {
   text-decoration: none;
 }
+.btn {
+  --height: 60px;
+
+  display: inline-block;
+  padding: 0 20px;
+  color: #fff;
+  min-width: 205px;
+  height: var(--height);
+  line-height: var(--height);
+  border-radius: 99px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  background: #2e80ce;
+  border: 1px solid #2e80ce;
+}
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
 .header {
   min-height: 100vh;
   background: var(--header-bg);
@@ -75,7 +95,7 @@ a {
 .navbar__list {
   display: flex;
 }
-
+.header-action__login,
 .navbar__link {
   padding: 4px 21px;
   font-size: 1.6rem;
@@ -97,4 +117,16 @@ a {
   height: 6px;
   border-radius: 50%;
   background: #fff;
+}
+.header-action {
+  display: flex;
+  align-items: center;
+}
+.header-action__login {
+  margin-right: 7px;
+}
+/* btn sign up */
+.header-action__signup {
+  --height: 44px;
+  min-width: 104px;
 }
