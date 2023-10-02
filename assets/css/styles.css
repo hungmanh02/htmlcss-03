@@ -374,6 +374,9 @@ a {
   column-gap: 30px;
   margin-top: 70px;
 }
+.member-item:hover .member-item__thumb {
+  transform: scale(1.1);
+}
 .member-item__img-bg {
   border-radius: 6px;
   padding-top: 28px;
@@ -385,6 +388,7 @@ a {
   max-width: 100%;
   height: 290px;
   object-fit: cover;
+  transition: 0.25s;
 }
 .member-item__title {
   margin-top: 12px;
